@@ -146,13 +146,11 @@ const Navbar = () => {
                 <FlexBetween gap={1} alignContent={"center"}>
                   <NotificationsIcon />
                   <Typography variant="h6">Notifications</Typography>
+                </FlexBetween>
+                <FlexBetween gap={1} alignContent={"center"}>
+                  <HelpIcon />
+                  <Typography variant="h6">Help</Typography>
                 </FlexBetween>                
-                <IconButton sx={{ width: "100%", borderRadius: 0 }}>
-                  <FlexBetween gap={1} alignContent={"center"}>
-                    <HelpIcon />
-                    <Typography variant="h6">Help</Typography>
-                  </FlexBetween>
-                </IconButton>
                 <TextField
                   autoComplete="false"
                   onChange={handleSearchValueChange}
@@ -197,12 +195,8 @@ const Navbar = () => {
             <IconButton onClick={() => navigate("/chat")}>
               <MessageIcon />
             </IconButton>
-            <IconButton>
-              <NotificationsIcon />
-            </IconButton>
-            <IconButton>
-              <HelpIcon />
-            </IconButton>
+            <NotificationsIcon />  
+            <HelpIcon />           
             {token && (
               <IconButton onClick={handleLogout}>
                 <LogoutIcon />
