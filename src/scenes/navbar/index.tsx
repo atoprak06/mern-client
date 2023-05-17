@@ -142,13 +142,11 @@ const Navbar = () => {
                     <MessageIcon />
                     <Typography variant="h6">Messages</Typography>
                   </FlexBetween>
-                </IconButton>
-                <IconButton sx={{ width: "100%", borderRadius: 0 }}>
-                  <FlexBetween gap={1} alignContent={"center"}>
-                    <NotificationsIcon />
-                    <Typography variant="h6">Notifications</Typography>
-                  </FlexBetween>
-                </IconButton>
+                </IconButton>               
+                <FlexBetween gap={1} alignContent={"center"}>
+                  <NotificationsIcon />
+                  <Typography variant="h6">Notifications</Typography>
+                </FlexBetween>                
                 <IconButton sx={{ width: "100%", borderRadius: 0 }}>
                   <FlexBetween gap={1} alignContent={"center"}>
                     <HelpIcon />
